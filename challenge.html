@@ -1,5 +1,12 @@
 <link rel="stylesheet" href="style.css">
-<a href="index.html"><button class="next-button">next</button></a>
+<select class="select-page" onchange="this.blur(); location= this.value;">
+    <option value="index.html">Select Page</option>
+    <option value="index.html">Index</option>
+    <option value="challenge.html">challenge#1</option>
+    <option value="challenge2.html">challenge#2</option>
+
+</select>
+
 
 <style>
 .amazon-link{
@@ -53,8 +60,6 @@
 }
 
 </style>
-
-
 
 
 <a href="https://www.amazon.com" class="amazon-link">Back to Amazon</a>

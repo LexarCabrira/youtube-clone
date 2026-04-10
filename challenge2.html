@@ -1,0 +1,126 @@
+<link rel="stylesheet" href="style.css">
+<select class="select-page" onchange="this.blur(); location= this.value;">
+    <option value="index.html">Select Page</option>
+    <option value="index.html">Index</option>
+    <option value="challenge.html">challenge#1</option>
+    <option value="challenge2.html">challenge#2</option>
+
+</select>
+
+<style>
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+}
+
+.pagination button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+    background-color:rgb(216, 216, 216);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 5px 2px 10px rgba(0,0,0,0.30);
+    transition: background-color 0.5s;
+}
+.pagination button:hover{
+    background-color:rgb(233, 233, 233);
+}
+.pagination a:hover{
+    color:blue;
+    cursor: pointer;
+    box-shadow: 5px 2px 10px rgba(0,0,0,0.30);
+}
+.stretch-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stretch-button{
+    background-color: green;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;   
+    color: white;
+    transition: padding 0.5s;
+    vertical-align: middle;
+}
+.stretch-button:hover{
+    padding: 24px 24px; 
+}
+
+.shadow-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.shadow-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    
+
+    box-shadow: 0 6px 0 #2e7d32;
+    
+    cursor: pointer;
+    transition: all 0.1s ease;
+    box-shadow: 4px 4px 0 #2e7d32;
+}
+
+
+.shadow-button:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px #2e7d32;
+}
+.three-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+}
+.three-container button{
+    background-color: #4CAF50;
+    padding: 10px 24px;
+    color:white;
+    transition: padding 0.2s;
+}
+.three-container button:hover{
+    background-color: #4CAF50;
+    padding: 10px 32px;
+    color:white;
+}
+</style>
+
+<div class="pagination">
+    <button>Back</button>
+    <a>1</a>
+    <a>2</a>
+    <a>3</a>
+    <a>4</a>
+    <a>5</a>
+    <button>next</button>
+</div>
+
+<div class="stretch-container">
+    <button class="stretch-button">Stretch</button>
+</div>
+<br>
+<div class="shadow-container">
+    <button class="shadow-button">Click Me</button>
+</div>
+<br>
+<div class="three-container">
+    <button class="one-button">one</button>
+    <button class="two-button">two</button>
+    <button class="three-button">three</button>
+</div>

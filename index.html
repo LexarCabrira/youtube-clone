@@ -1,37 +1,27 @@
+<link rel="stylesheet" href="style.css">
+<select class="select-page" onchange="this.blur(); location= this.value;">
+    <option value="index.html">Select Page</option>
+    <option value="index.html">Index</option>
+    <option value="challenge.html">challenge#1</option>
+    <option value="challenge2.html">challenge#2</option>
+
+</select>
+
+
+
 <style>
     *{
         border: 1px solid red;
     }
-body{
-    min-height: 500vh;
-}
-.next-button{
-    background-color:rgb(0, 50, 143);
-    color: white;
-    width: 100px;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    font-size:2.2cap;
-    font-weight: bold;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    margin-top:10px;
-    margin-bottom:20px;
-    position: absolute;
-    right:10;
-    top:0;
-    
-
-}
 .subscribe-button {
     background-color: rgb(153, 36, 36);
     color: white;
     border: none;
-    height: 36px;
-    width: 105px;
-    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 4px;
     cursor: pointer;
     font-weight:bold;
     font-size:15px;
@@ -56,9 +46,11 @@ body{
     border-style: solid;
     border-width: 1px;
     font-weight:bold;
-    height: 36px;
-    width: 105px;
-    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
     cursor: pointer;
     font-size:15px;
     margin-right: 8px;
@@ -81,8 +73,10 @@ body{
     border-style: solid;
     border-width: 1px;
     font-weight:bold;
-    height: 36px;
-    width: 105px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
     border-radius: 8px;
     cursor: pointer;
     font-size:15px;
@@ -101,7 +95,7 @@ body{
 
 
 </style>
-<a href="challenge.html"><button class="next-button">next</button></a>
+
 <button class="subscribe-button">subscribe</button>
 
 <button class="join-button">Join</button>
