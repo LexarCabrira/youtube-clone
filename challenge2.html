@@ -82,23 +82,32 @@
     transform: translate(4px, 4px);
     box-shadow: 0px 0px 0px #2e7d32;
 }
-.three-container{
+
+
+.button-container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap:16px;
+    gap: 16px;
 }
-.three-container button{
+
+.button-wrapper{
+    border: none;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+
+}
+.button-container button{
     background-color: #4CAF50;
     padding: 10px 24px;
     color:white;
     transition: padding 0.2s;
 }
-.three-container button:hover{
-    background-color: #4CAF50;
-    padding: 10px 32px;
-    color:white;
+.button-container button:hover{
+    padding: 10px 50px;
+    
 }
+
 </style>
 
 <div class="pagination">
@@ -119,8 +128,14 @@
     <button class="shadow-button">Click Me</button>
 </div>
 <br>
-<div class="three-container">
-    <button class="one-button">one</button>
-    <button class="two-button">two</button>
-    <button class="three-button">three</button>
+<div class="button-container">
+    <div class="button-wrapper">
+       <button class="one-button">one</button>
+    </div>
+    <div class="button-wrapper">
+       <button class="two-button">two</button>
+    </div>
+    <div class="button-wrapper">
+       <button class="three-button">three</button>
+    </div>
 </div>
