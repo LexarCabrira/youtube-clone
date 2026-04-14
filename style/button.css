@@ -1,10 +1,6 @@
-<link rel="stylesheet" href="/include/select-page.css">
-<div includes="/include/select-page.html"></div>
-<script src="/include/include.js"></script>
-<style>
-    *{
-        border: 1px solid red;
-    }
+*{
+    border: 1px solid red;
+}
 .subscribe-button {
     background-color: rgb(153, 36, 36);
     color: white;
@@ -83,17 +79,3 @@
 .tweet-button:active{
     opacity: 0.5;
 }
-
-
-
-</style>
-<body>
-<button class="subscribe-button">subscribe</button>
-
-<button class="join-button">Join</button>
-
-<button class="tweet-button">Twiter</button>
-
-</body>
-
-
