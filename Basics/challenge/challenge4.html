@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="/Basics/include/select-page.css">
+        <script src="/Basics/include/include.js"></script>
+
     <style>
         * {
             border: 1px solid red;
@@ -58,7 +61,7 @@
         .search-box4 input,
         .search-box4 img,
         .search-box4 button {
-            vertical-align:middle;
+            vertical-align: middle;
         }
 
         .search-box4 input {
@@ -66,30 +69,33 @@
             border: 1px solid rgb(94, 94, 94);
             padding: 13px 15px;
             font-size: 18px;
-            border:none;
-        }
-        .search-box4 img{
-            width: 50px;
-            height: 50px;
-            object-fit:cover;
-            border-radius: 50%;
-        }
-        .search-box4 button{
-            background-color: rgb(0, 119, 255);
-            color:white;
-            font-size: 16px;
-            font-weight: bold;
-            padding:10px 15px;
-            border:none;
-            border-radius: 30px;
+            border: none;
         }
 
+        .search-box4 img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .search-box4 button {
+            background-color: rgb(0, 119, 255);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 30px;
+        }
     </style>
 
 
 </head>
 
 <body>
+    <div includes="/Basics/include/select-page.html"></div>
+
     <div class="search-box"><input type="text" placeholder="Search"></div>
     <br>
     <div class="search-box2"><input type="text" placeholder="Search Google or type URL"></div>
