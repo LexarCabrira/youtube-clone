@@ -17,6 +17,43 @@
         .password {
             margin-top: 5px;
         }
+
+        p,
+        .yes-button,
+        .no-button {
+            display: inline-block;
+            vertical-align: middle;
+
+        }
+
+        p {
+            width: 200px;
+        }
+
+        .image-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .google-img {
+            width: 200px;
+        }
+
+        .search-input {
+            width: 500px;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: 1px solid rgb(94, 94, 94);
+            box-shadow: 1px 1px 6px rgba(94, 94, 94, 0.50);
+            border: none;
+        }
+
+        .login-wrapper .text1{
+            display: inline-block;
+        }
     </style>
 </head>
 
@@ -24,6 +61,30 @@
     <div includes="/Basics/include/select-page.html"></div>
     <input type="text" class="name" placeholder="name"></input>
     <input type="text" class="password" placeholder="password"></input>
+
+    <p>
+        Thanks for chatting with our customer support. Would you like to take our quick survey?
+    </p>
+    <button class="yes-button">Yes</button>
+    <button class="no-button">No</button>
+
+
+    <div class="image-wrapper">
+        <img class="google-img" src="/image/google.webp" alt="">
+        <input type="text" class="search-input" placeholder="Search Google or type URL"></input>
+    </div>
+
+    <div class="login-wrapper">
+        <input type="text" class="text1" placeholder="First name"></input>
+        <input type="text" class="text2" placeholder="First name"></input>
+        <input type="text" class="text3" placeholder="Email"></input>
+        <button class="sign-button">Sign Up</button>
+    </div>
+
+
+
+
+
 </body>
 
 </html>
