@@ -51,16 +51,132 @@
             border: none;
         }
 
-        .login-wrapper .text1{
-            display: inline-block;
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+
+        }
+
+        .login-wrapper {
+            border: 1px solid gray;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 380px;
+            gap: 10px;
+
+        }
+
+        .text-container {
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+        }
+
+        .text-container .text1,
+        .text2 {
+            width: 120px;
+            padding: 12px 12px;
+            font-size: 16px;
+            border-radius: 12px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+
+        .text3 {
+            padding: 12px 12px;
+            font-size: 16px;
+            width: 300px;
+            box-sizing: border-box;
+            border-radius: 12px;
+            border: 1px solid #ccc;
+        }
+
+        .sign-button {
+            border: none;
+            color: white;
+            background-color: rgb(0, 132, 255);
+            font-size: 20px;
+            font-weight: bold;
+            padding: 12px 20px;
+            width: 300px;
+            border-radius: 12px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+        }
+
+        .form-wrapper {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 20px;
+            width: 400px;
+        }
+
+        .request {
+            font-family: arial;
+            font-size: 40px;
+            width: 500px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .input-container{
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .input-container .pickup, .destination{
+            font-size: 14px;
+            padding: 12px 20px;
+            background-color: #f5f3f3;
+            border: none;
+            width: 320px;
+        }
+        .button-container{
+            gap: 10px;
+            display: flex;
+        }
+
+        .button-container .request-button, .schedule-button{
+            margin-top: 35px;
+            font-size: 16px;
+            border: none;
+            gap: 12px;
+        }
+
+        .request-button{
+            background-color: black;
+            color: white;
+            padding: 12px 12px;
+        }
+
+        .schedule-button{
+            padding: 12px 24px;
         }
     </style>
 </head>
 
 <body>
     <div includes="/Basics/include/select-page.html"></div>
-    <input type="text" class="name" placeholder="name"></input>
-    <input type="text" class="password" placeholder="password"></input>
+    <div>
+        <input type="text" class="name" placeholder="name"></input>
+        <input type="text" class="password" placeholder="password"></input>
+    </div>
 
     <p>
         Thanks for chatting with our customer support. Would you like to take our quick survey?
@@ -74,11 +190,44 @@
         <input type="text" class="search-input" placeholder="Search Google or type URL"></input>
     </div>
 
-    <div class="login-wrapper">
-        <input type="text" class="text1" placeholder="First name"></input>
-        <input type="text" class="text2" placeholder="First name"></input>
-        <input type="text" class="text3" placeholder="Email"></input>
-        <button class="sign-button">Sign Up</button>
+    <div class="login-container">
+        <div class="login-wrapper">
+            <div class="text-container">
+                <input type="text" class="text1" placeholder="First name"></input>
+                <input type="text" class="text2" placeholder="First name"></input>
+            </div>
+
+            <input type="text" class="text3" placeholder="Email"></input>
+            <button class="sign-button">Sign Up</button>
+        </div>
+
+    </div>
+
+    <div class="form">
+        <div class="form-wrapper">
+            
+                <p class="request">
+                    Request a ride now
+                </p>
+            
+            <div class="input-container">
+                <input type="text" class="pickup" placeholder="Enter pickup location">
+                <input type="text" class="destination" placeholder="Enter destination">
+            </div>
+
+            <div class="button-container">
+                <button class="request-button">
+                    Request now
+                </button>
+                <button class="schedule-button">
+                    Schedule for later
+                </button>
+            </div>
+        </div>
+
+
+
+
     </div>
 
 
